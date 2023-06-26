@@ -4,6 +4,10 @@ function Home() {
     return(
         <>
         <Header></Header>
+        
+        <section>
+
+        </section>
         </>
     )
 }
