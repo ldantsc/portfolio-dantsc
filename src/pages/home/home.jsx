@@ -2,7 +2,7 @@ import Header from "../../components/header/header"
 import Logo from "../../components/logo/logo"
 import TextMain from "../../components/text-main/text-main"
 import ScrollDownText from "../../components/scroll-text/scroll-text"
-import ScrollInfo from "../../components/scroll-info/scroll-info"
+import ScrollSvg from "../../components/scroll-svg/scroll-svg"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -13,6 +13,7 @@ function Home() {
         /*HOME SECTION*/
         <>      
         <Header />
+        <section id="home">
         <Container>
             <Row>
                 <Col><Logo /></Col>
@@ -23,10 +24,11 @@ function Home() {
             <Row>
                 <Col>
                 <ScrollDownText />
-                <ScrollInfo />       
+                <ScrollSvg />       
                 </Col>
             </Row>   
         </Container>
+        </section>
         </>
     )
 };

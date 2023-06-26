@@ -1,4 +1,4 @@
-function ScrollInfo() {
+function ScrollSvg() {
     return (
         <>
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-chevron-compact-down"
@@ -10,4 +10,4 @@ function ScrollInfo() {
     )
 };
 
-export default ScrollInfo;
+export default ScrollSvg;

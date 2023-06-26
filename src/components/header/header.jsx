@@ -1,12 +1,13 @@
-import "./style.css"
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import "./style.css"
 
 function Header() {
   return (
     /*NAVBAR*/
-    <Navbar expand="lg" className="bg-body-tertiary   ">
+    <>
+    <Navbar expand="lg" className="bg-body-tertiary bg-page" variant='bg-page' sticky='top'>
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -20,6 +21,7 @@ function Header() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </>
   )
 }
 
