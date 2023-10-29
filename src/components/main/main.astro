@@ -1,0 +1,31 @@
+---
+
+import '@fontsource/poppins/100.css'
+import '@fontsource/poppins/200.css'
+import '@fontsource/poppins/400.css'
+import '@fontsource/poppins/700.css'
+import '@fontsource/poppins/900.css'
+import style from '../../styles/main.module.css'
+
+const describe = ["Seja muito bem vindo !", "Sou o Lucas Dantas", "Desenvolvedor Web", " Front End"];
+const linkedinIcon = "./linkedin.svg";
+const githubIcon = "./github.svg";
+const mailIcon = "./mail.svg"
+const whatsappIcon = "./whatsapp.svg";
+
+---
+
+<div id="container-home" class="container mx-auto flex flex-col justify-center">
+    <div class=`${style.container_text} py-16 xl:py-36`>
+        <h2 data-aos="fade-left" data-aos-delay="600" class="text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">{describe[1]}</h2>
+        <h3 data-aos="flip-right" data-aos-duration="2500" data-aos-delay="1000" class="text-4xl lg:text-6xl xl:text-6xl 2xl:text-7xl">{describe[2]}<span>{describe[3]}</span></h3>
+    </div>
+    <div data-aos="fade-left" data-aos-delay="1000"  id="container-social-list" class=`self-end`>
+        <ul id="social-list-icons" class=`{style.social_list_icons} flex`>
+            <li><a href="https://www.linkedin.com/in/dantsc/" target="_blank"><img src={linkedinIcon} alt="icone de rede social linkedin"></a></li>
+            <li><a href="https://github.com/ldantsc" target="_blank"><img src={githubIcon} alt="icone de rede social github"></a></li>
+            <li><a href="mailto:dants.dev@gmail.com"><img src={mailIcon} alt="icone de email"></a></li>
+            <li><a href="https://wa.link/wr4vt8" target="_blank"><img src={whatsappIcon} alt="icone do whatsapp"></a></li>
+        </ul>
+    </div>
+</div>

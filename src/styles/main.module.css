@@ -1,0 +1,29 @@
+.container_text > h1 {
+    font-weight: 200;
+}
+
+.container_text > h2 {
+    font-weight: 200;
+}
+
+.container_text > h3 {
+    color: var(--color-blue-dark);
+    font-weight: 900;
+}
+
+.container_text > h3 > span {
+    color: var(--color-blue-soft);
+}
+
+li {
+    margin: 8px;
+}
+
+img {
+    width: 40px;
+    transition: 1s;
+}
+
+img:hover {
+    filter:opacity(70%)
+}
