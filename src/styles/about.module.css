@@ -1,0 +1,22 @@
+.title {
+    font-size: 38px;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+.describe {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.bold_blue_h {
+    color: var(--color-blue-dark);
+}
+
+.bold_blue_s {
+    color: var(--color-blue-soft)
+}
+
+.bold_blue_h, .bold_blue_s{
+    font-weight: 700;
+}

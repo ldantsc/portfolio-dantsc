@@ -1,3 +1,23 @@
-<div>
-    
+---
+
+import '@fontsource/poppins/700.css'
+import AboutImg from '../aboutImg/about-img.astro'
+import style from '../../styles/about.module.css'
+
+---
+
+<div id="container-about" class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 justify-items-center items-center gap-10">
+    <div class="align-self center p-4">
+        <h2 class=`${style.title}`>Sobre mim</h2>
+        <p class=`${style.describe}`>
+            Olá! Meu nome é Lucas Dantas, sou <span class=`${style.bold_blue_s}`>aspirante de TI</span> e desenvolvedor
+            web front-end. Embora eu já tenha um certo conhecimento em
+            manutenção de computadores desde 2008, venho me dedicando desde 2022
+            no <span class=`${style.bold_blue_h}`>mundo da programação</span> focado em desenvolvimento de websites com as
+            <span class=`${style.bold_blue_s}`>principais tecnologias do mercado</span>
+        </p>
+    </div>
+    <div class="scale-75 md:scale-75 lg:scale-100">
+        <AboutImg />
+    </div>
 </div>

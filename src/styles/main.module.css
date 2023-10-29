@@ -19,11 +19,25 @@ li {
     margin: 8px;
 }
 
-img {
-    width: 40px;
-    transition: 1s;
+.down_icon {
+    filter: opacity(50%);
+    animation: icon-anim 1s ease infinite alternate;
 }
 
-img:hover {
-    filter:opacity(70%)
+@keyframes icon-anim {
+    from {
+        transform: translateY(-5px);
+    }
+    to {
+        transform: translateY(5px);
+    }
+}
+
+.icon {
+    width: 40px;
+    transition: 0.5s;
+}
+
+.icon:hover {
+    filter:opacity(85%) hue-rotate(40deg)
 }
