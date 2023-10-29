@@ -26,7 +26,8 @@ section {
 }
 
 #container-home {
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
 }
 
 .serif {
