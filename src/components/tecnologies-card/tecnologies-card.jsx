@@ -7,7 +7,7 @@ import style from "../../styles/tecnologies.module.css"
 function InsertIcons(icons) {
     useEffect(() => {
         const arr = icons
-        const div = document.querySelector("#container-card-icons")     
+        const div = document.querySelector(".container-card-icons")     
         for(let i = 0; i < arr.length; i++) {
             const elementImg = document.createElement("img")
             elementImg.setAttribute('src', arr[i])
@@ -20,14 +20,13 @@ function InsertIcons(icons) {
 
 export default function TecnologiesCard(props) {
     return (
-        <div id="card" className={style.card}>
+        <div className={style.card}>
             <div>
                 <h3>{props.title}</h3>
             </div>
-            <div id="container-card-icons">
+            <div className="container-card-icons">
                 {InsertIcons(props.icons)}
             </div>
-            <div></div>
         </div>
     )
 }
