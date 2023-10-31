@@ -1,6 +1,7 @@
 
 :root {
     --bg-theme-white: #F5F4F0;
+    --bg-color-card: #F3F3F3;
     --color-blue-dark: #1D4E89;
     --color-blue-soft: #1FBACE;
     --color-orange-soft: #FBD1A2;
@@ -16,7 +17,6 @@ body {
 body {
     background-color: var(--bg-theme-white);
     color: var(--color-font-dark);
-    overflow-x: hidden;
     display: flex;
     justify-content: center;
 }
@@ -31,4 +31,9 @@ section {
 
 .serif {
     font-family: 'Quattrocento', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+    font-size: 38px;
+    font-weight: 700;
 }

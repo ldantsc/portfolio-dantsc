@@ -1,0 +1,34 @@
+---
+
+import style from "../../styles/tecnologies.module.css"
+import TecnologiesCard from '../tecnologies-card/tecnologies-card.jsx'
+
+const icons = [{
+    id: 1, 
+    os: ['./icons/windows.svg', './icons/ubuntu.ico']
+},{     
+    id: 2, 
+    essentials: ['./icons/html.svg', './icons/css.svg', './icons/js.svg', './icons/ts.svg', './icons/node.svg', './icons/git.svg']
+}, {
+    id: 3, 
+    tools: ['./icons/bootstrap.svg', './icons/figma.svg','./icons/framer.svg', './icons/tailwind.svg']
+}, {
+    id: 4, 
+    lib: ['./icons/windows.svg', './icons/ubuntu.ico']
+}]
+
+---
+
+
+<div id="container-tecnologies grid" class="container grid grid-rows-1 text-center">
+    <div id="container-describe-tecnologies" class=`${style.describe_tecnologies}`>
+        <h2 class="title py-7">Tecnologias</h2>
+        <p class="py-7 text-3xl">Algumas das <span>tecnologias</span> que <span>utilizo e estudo</span> no meu dia a dia como desenvolvedor web</p>
+    </div>
+    <div class="flex flex-wrap">
+            <TecnologiesCard key={icons[0].id} title="O.S" icons={icons[0].os} client:only/>
+            <TecnologiesCard key={icons[1].id} title="Essentials" icons={icons[1].essentials} client:only/>
+    </div>
+    <script>
+    </script>
+</div>

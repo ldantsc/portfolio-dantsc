@@ -1,16 +1,19 @@
 ---
 import CertificationsImg from '../certifications-img/certifications-img.astro'
 import CertificationsDescribe from '../certifications-describe/certifications-describe.astro'
+import style from '../../styles/certifications.module.css'
 ---
 
-<div id="container-certifications" class="grid grid-cols-2">
-    <div>
-        <h2>Certificados</h2>
-        <p>“A cada dia um novo passo, um novo desafio, um novo aprendizado”</p>
-        <CertificationsImg />
+<div id="container-certifications" class="grid grid-cols-1 xl:grid-cols-2 gap-4" >
+    <div id="container-title-certifications" class="relative w-[520px] h-[550px]">
+        <h2 class=`title`>Certificados</h2>
+        <p class=`${style.subtitle}`>“A cada dia um novo passo, um novo desafio, um novo aprendizado”</p>
+        <CertificationsImg>
     </div>
-    <div class="text-end">
-        <CertificationsDescribe />
+    <div id="container-describe-certifications" class="text-end">
+        <CertificationsDescribe title="Superior em Desenvolvimento Web" name="Anhanguera Educacional - Técnologo" other="cursando desde ago/2023" delayFx="300"/>
+        <CertificationsDescribe title="Trilha Discovery Desenvolvimento Web" name="Rocketseat" other="jun/2023" delayFx="600" />
+        <CertificationsDescribe title="Orientação a Objetos com Javascript e Typescript" name="Udemy&#8482" other="jul/2023" delayFx="900" />
         <p>Entre outros que você pode conferir no meu Linkedin...</p>
     </div>
 </div>

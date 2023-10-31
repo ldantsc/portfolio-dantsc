@@ -11,7 +11,7 @@
     font-weight: 900;
 }
 
-.container_text > h3 > span {
+.container_text > span {
     color: var(--color-blue-soft);
 }
 
@@ -36,6 +36,7 @@ li {
 .icon {
     width: 40px;
     transition: 0.5s;
+    text-transform: capitalize;
 }
 
 .icon:hover {
