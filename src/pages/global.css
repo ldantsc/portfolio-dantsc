@@ -12,6 +12,7 @@
 html,
 body {
     font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {

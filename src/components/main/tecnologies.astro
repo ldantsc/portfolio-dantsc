@@ -1,5 +1,4 @@
 ---
-
 import style from "../../styles/tecnologies.module.css"
 import TecnologiesCard from '../tecnologies-card/tecnologies-card.jsx'
 
@@ -14,21 +13,21 @@ const icons = [{
     tools: ['./icons/bootstrap.svg', './icons/figma.svg','./icons/framer.svg', './icons/tailwind.svg']
 }, {
     id: 4, 
-    lib: ['./icons/windows.svg', './icons/ubuntu.ico']
-}]
-
+    lib: ['./icons/react.svg', './icons/vite.svg', './icons/astro.svg', './icons/nextjs.svg']
+}];
 ---
 
 
-<div id="container-tecnologies grid" class="container grid grid-rows-1 text-center">
-    <div id="container-describe-tecnologies" class=`${style.describe_tecnologies}`>
+<div id="container-tecnologies" class="container grid grid-rows-1 text-center">
+    <div id="container-describe-tecnologies" class=`${style.describe_tecnologies} my-10 py-20`>
         <h2 class="title py-7">Tecnologias</h2>
         <p class="py-7 text-3xl">Algumas das <span>tecnologias</span> que <span>utilizo e estudo</span> no meu dia a dia como desenvolvedor web</p>
     </div>
-    <div class="flex flex-wrap">
+    <div id="container-tecnologies-card" class="flex flex-wrap justify-center gap-8">
             <TecnologiesCard key={icons[0].id} title="O.S" icons={icons[0].os} client:only/>
             <TecnologiesCard key={icons[1].id} title="Essentials" icons={icons[1].essentials} client:only/>
+            <TecnologiesCard key={icons[2].id} title="Front Tools" icons={icons[2].tools} client:only/>
+            <TecnologiesCard key={icons[3].id} title="Libs & Frameworks" icons={icons[3].lib} client:only/>
     </div>
-    <script>
-    </script>
+
 </div>

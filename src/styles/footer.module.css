@@ -1,0 +1,12 @@
+.container_footer span:first-child {
+    color: var(--color-blue-dark);
+}
+
+.container_footer span:last-child {
+    color: var(--color-blue-soft);
+}
+
+.container_footer img {
+    text-align: center;
+    width: 10px;
+}

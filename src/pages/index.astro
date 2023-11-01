@@ -6,6 +6,7 @@ import About from "../components/main/about.astro";
 import Certifications from "../components/main/certifications.astro";
 import Tecnologies from "../components/main/tecnologies.astro";
 import Projects from "../components/main/projects.astro";
+import Footer from "../components/footer/footer.astro"
 import "./global.css";
 
 ---
@@ -14,13 +15,17 @@ import "./global.css";
 	<section id="home" class="container">
 		<Main />
 	</section>
-	<section id="about" class="container">
+	<section id="about" class="container my-20">
 		<About />
 	</section>
-	<section id="certifications" class="container">
+	<section id="certifications" class="container my-20">
 		<Certifications />
 	</section>
-	<section id="tecnologies" class="container">
+	<section id="tecnologies" class="container my-20">
 		<Tecnologies />
 	</section>
+	<section id="projects" class="container my-20">
+		<Projects />
+	</section>
+	<Footer />
 </BaseLayout>
