@@ -1,10 +1,16 @@
 ---
 
 import ProjectsCard from '../projects-card/projects-card.jsx'
-
+/* API PUBLICA DO GITHUB */
 const response = await fetch('https://api.github.com/users/ldantsc/repos')
-const data = await response.json()
-console.log(data[2].name) 
+const userData = await response.json()
+/* Filtrando o json para trazer apenas os repositórios que não tenha a tag study-notes */
+/* Após devolver o array filtrado para newArr, utilizar o map para percorrer o json */
+const newArr = userData.filter((data) => {
+    if(!data.topics.includes("study-notes")){
+        return data
+    }
+})
 ---
 
 <div id="container-projects">
@@ -12,7 +18,7 @@ console.log(data[2].name)
         <h2 class="title">Meu projetos</h2>
     </div>
     <div id="container-projects-card" class="flex flex-wrap gap-3">
-        {data.map((data) => {
+        {newArr.map((data) => {
             return (
                 <ProjectsCard title={data.name} description={data.description} url={data.html_url} client:only/>
             )
