@@ -1,9 +1,11 @@
 ---
 
 import ProjectsCard from '../projects-card/projects-card.jsx'
+
 /* API PUBLICA DO GITHUB */
-const response = await fetch('https://api.github.com/users/ldantsc/repos')
-const userData = await response.json()
+
+const user = await fetch('https://api.github.com/users/ldantsc/repos')
+const userData = await user.json()
 /* Filtrando o json para trazer apenas os repositórios que não tenha a tag study-notes */
 /* Após devolver o array filtrado para newArr, utilizar o map para percorrer o json */
 const newArr = userData.filter((data) => {
@@ -11,20 +13,23 @@ const newArr = userData.filter((data) => {
         return data
     }
 })
+
 ---
 
-<div id="container-projects">
-    <div id="container-projects-title">
+<div id="container-projects" class="">
+    <div id="container-projects-title" class="my-20">
         <h2 class="title">Meu projetos</h2>
     </div>
-    <div id="container-projects-card" class="flex flex-wrap gap-3">
+    <div id="container-projects-card" class="flex flex-wrap gap-8 justify-center">
         {newArr.map((data) => {
+            const img = `https://raw.githubusercontent.com/ldantsc/${data.name}/${data.default_branch}/demo.png` 
+            console.log(img)
             return (
-                <ProjectsCard title={data.name} description={data.description} url={data.html_url} client:only/>
+                <ProjectsCard title={data.name} description={data.description} url={data.html_url} image={img} client:only/>
             )
         })}
     </div>
-    <div>
-        <p class="italic text-end">Aguarde para mais projetos futuros...</p>
+    <div class="py-20">
+        <p class="italic text-end">Aguarde para mais projetos no futuro...</p>
     </div>
 </div>

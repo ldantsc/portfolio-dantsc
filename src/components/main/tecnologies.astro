@@ -2,19 +2,24 @@
 import style from "../../styles/tecnologies.module.css"
 import TecnologiesCard from '../tecnologies-card/tecnologies-card.jsx'
 
-const icons = [{
+const iconsTech = [{
     id: 1, 
-    os: ['./icons/windows.svg', './icons/ubuntu.ico']
+    title: "O.S",
+    icon: ['./icons/windows.svg', './icons/ubuntu.ico']
 },{     
     id: 2, 
-    essentials: ['./icons/html.svg', './icons/css.svg', './icons/js.svg', './icons/ts.svg', './icons/node.svg', './icons/git.svg']
+    title: "Essentials",
+    icon: ['./icons/html.svg', './icons/css.svg', './icons/js.svg', './icons/ts.svg', './icons/node.svg', './icons/git.svg']
 }, {
     id: 3, 
-    tools: ['./icons/bootstrap.svg', './icons/figma.svg','./icons/framer.svg', './icons/tailwind.svg']
+    title: "Front Tools",
+    icon: ['./icons/bootstrap.svg', './icons/figma.svg','./icons/framer.svg', './icons/tailwind.svg']
 }, {
     id: 4, 
-    lib: ['./icons/react.svg', './icons/vite.svg', './icons/astro.svg', './icons/nextjs.svg']
+    title: "Libs & Frameworks",
+    icon: ['./icons/react.svg', './icons/vite.svg', './icons/astro.svg', './icons/nextjs.svg']
 }];
+
 ---
 
 
@@ -24,10 +29,9 @@ const icons = [{
         <p class="py-7 text-3xl">Algumas das <span>tecnologias</span> que <span>utilizo e estudo</span> no meu dia a dia como desenvolvedor web</p>
     </div>
     <div id="container-tecnologies-card" class="flex flex-wrap justify-center gap-8">
-            <TecnologiesCard key={icons[0].id} title="O.S" icons={icons[0].os} client:only/>
-            <TecnologiesCard key={icons[1].id} title="Essentials" icons={icons[1].essentials} client:only/>
-            <TecnologiesCard key={icons[2].id} title="Front Tools" icons={icons[2].tools} client:only/>
-            <TecnologiesCard key={icons[3].id} title="Libs & Frameworks" icons={icons[3].lib} client:only/>
+        {iconsTech.map((tech) => {
+            return <TecnologiesCard key={tech.id} title={tech.title} icons={tech.icon} client:only/>
+        })}
     </div>
 
 </div>
