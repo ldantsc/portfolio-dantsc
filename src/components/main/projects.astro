@@ -1,6 +1,7 @@
 ---
 
 import ProjectsCard from '../projects-card/projects-card.jsx'
+import styles from '../../styles/projects.module.css'
 
 /* API PUBLICA DO GITHUB */
 
@@ -20,10 +21,9 @@ const newArr = userData.filter((data) => {
     <div id="container-projects-title" class="my-20">
         <h2 class="title">Meu projetos</h2>
     </div>
-    <div id="container-projects-card" class="flex flex-wrap gap-8 justify-center">
+    <div id="container-projects-card" class=`flex flex-wrap gap-8 justify-center`>
         {newArr.map((data) => {
             const img = `https://raw.githubusercontent.com/ldantsc/${data.name}/${data.default_branch}/demo.png` 
-            console.log(img)
             return (
                 <ProjectsCard title={data.name} description={data.description} url={data.html_url} image={img} client:only/>
             )

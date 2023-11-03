@@ -9,8 +9,8 @@ export default function ProjectsCard(props) {
             <div className='mb-1'>
                 <img src={props.image} alt="imagem do projeto" />
             </div>
-            <div className='px-6 grow'>
-                <h3 className='mb-3'>{props.title.replaceAll('-', ' ').toUpperCase()}</h3>
+            <div className='px-3 grow'>
+                <h3 className='my-3'>{props.title.replaceAll('-', ' ').toUpperCase()}</h3>
                 <p className='text-sm italic p-2'>{props.description}</p>
             </div>
             <div className='mb-6'>
