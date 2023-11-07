@@ -5,7 +5,9 @@ import style from '../../styles/projects.module.css'
 export default function ProjectsCard(props) {
 
     return (
-        <div className={style.card}>
+        <div className={style.card} data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="3000" >
             <div className='mb-1'>
                 <img src={props.image} alt="imagem do projeto" />
             </div>

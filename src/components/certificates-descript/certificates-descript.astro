@@ -1,0 +1,13 @@
+---
+
+const {title, name, other, delayFx } = Astro.props;
+import style from '../../styles/certificates.module.css'
+
+---
+
+
+<div class="text-end pb-10" data-aos-delay={delayFx}>
+    <h3 class=`${style.title_certificates_descript} text-4xl`>{title}</h3>
+    <p class=`${style.name_certificates_descript} text-xl`>{name}</p>
+    <p class="italic font-light">{other}</p>
+</div>

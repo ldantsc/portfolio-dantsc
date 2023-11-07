@@ -4,10 +4,10 @@ export default {
 	theme: {
 		container: {
 			padding: {
-			  DEFAULT: '0.3rem',
-			  sm: '3rem',
-			  lg: '6rem',
-			  xl: '7rem',
+			  'DEFAULT': '0.8rem',
+			  'sm': '2rem',
+			  'lg': '4rem',
+			  'xl': '5rem',
 			  '2xl': '6rem',
 			},
 		  },

@@ -1,0 +1,13 @@
+.subtitle {
+    font-style: italic;
+    color: var(--color-blue-dark);
+}
+
+.title_certificates_descript {
+    font-weight: 700;
+    color: var(--color-blue-dark);
+}
+
+.name_certificates_descript {
+    font-weight: 600;
+}

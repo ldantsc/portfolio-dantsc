@@ -1,4 +1,3 @@
-
 :root {
     --bg-theme-white: #F5F4F0;
     --bg-color-card: #F3F3F3;
@@ -26,15 +25,23 @@ section {
     max-width: 100vw;
 }
 
-#container-home {
-    height: 100vh;
+#certificates,
+#tecnologies,
+#projects {
+    @apply container my-20;
 }
 
-.serif {
-    font-family: 'Quattrocento', Tahoma, Geneva, Verdana, sans-serif;
+#about {
+    @apply container pb-8 lg:pb-10 xl:pb-20 mb-20;
+}
+
+#container-home {
+    height: 100vh;
+    @apply container;
 }
 
 .title {
-    font-size: 38px;
     font-weight: 700;
+    @apply text-4xl xl:text-5xl 2xl:text-6xl text-center lg:text-start;
+    @apply my-10;
 }

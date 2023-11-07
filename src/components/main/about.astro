@@ -1,26 +1,26 @@
 ---
 
 import '@fontsource/poppins/700.css'
-import AboutImg from '../about-img/about-img.astro'
+import AboutImage from '../about-image/about-image.astro'
 import style from '../../styles/about.module.css'
 
 ---
 
-<div id="container-about" class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 justify-items-center items-center">
-    <div id="container-describe-about" class="align-self center p-4">
-        <h2 class=`title my-7`>Sobre mim</h2>
-        <p class=`${style.describe}`>
+<div id="container-about" class=`${style.container_about}`>
+    <div id="container-descript-about" class=`${style.container_descript_about}`>
+        <h2 class="title">Sobre mim</h2>
+        <p class=`${style.descript}`>
             Olá! Meu nome é Lucas Dantas, sou <span class=`${style.bold_blue_s}`>aspirante de TI</span> e <span class=`${style.bold_blue_h}`>desenvolvedor
             web</span> front-end. Embora eu já tenha um certo conhecimento em
             manutenção de computadores desde 2008, venho me dedicando desde 2022
             no <span class=`${style.bold_blue_h}`>mundo da programação</span> focado em desenvolvimento de websites com as
             <span class=`${style.bold_blue_s}`>principais tecnologias do mercado</span>
         </p>
-        <div id="container-btn-about" class="my-5 text-end">
+        <div id="container-btn-about" class=`${style.container_btn_about}`>
             <a class=`${style.btn}`>Saiba mais</a>
         </div>
     </div>
-    <div id="container-img-about" class="scale-75 lg:scale-100">
-        <AboutImg />
+    <div id="container-img-about" class=`${style.container_image_about}`>
+        <AboutImage />
     </div>
 </div>

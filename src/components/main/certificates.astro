@@ -1,0 +1,21 @@
+---
+import CertificatesImage from '../certificates-images/certificates-images.astro'
+import CertificatesDescript from '../certificates-descript/certificates-descript.astro'
+import style from '../../styles/certificates.module.css'
+---
+
+<div id="container-certificates" class="grid grid-cols-1 xl:grid-cols-2 gap-4" >
+    <div id="container-title-certificates flex">
+        <div>
+            <h2 class=`title`>Certificados</h2>
+            <p class=`${style.subtitle}`>“A cada dia um novo passo, um novo desafio, um novo aprendizado”</p>
+        </div>
+
+    </div>
+    <div id="container-descript-certificates" class="text-end">
+        <CertificatesDescript title="Superior em Desenvolvimento Web" name="Anhanguera Educacional - Técnologo" other="cursando desde ago/2023" delayFx="300"/>
+        <CertificatesDescript title="Trilha Discovery Desenvolvimento Web" name="Rocketseat" other="jun/2023" delayFx="600" />
+        <CertificatesDescript title="Orientação a Objetos com Javascript e Typescript" name="Udemy&#8482" other="jul/2023" delayFx="900" />
+        <p>Entre outros que você pode conferir no meu Linkedin...</p>
+    </div>
+</div>
