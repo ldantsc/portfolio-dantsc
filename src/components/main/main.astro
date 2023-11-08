@@ -11,15 +11,18 @@ const whatsappIcon = "./whatsapp.svg";
 
 <div id="container-home" class=`${style.container_home}`>
     <div id="container-description-home" class=`${style.container_text}`>        
-        <h1>Olá! Sou o Lucas Dantas</h1>
-        <h2>Desenvolvedor Web <span>Front End</span></h2>
-        <div id="container-social-list-home" class=`${style.container_social_list}`>
+        <h1 data-aos="fade-right">Olá! Sou o Lucas Dantas</h1>
+        <h2 data-aos="flip-right">Desenvolvedor Web <span>Front End</span></h2>
+        <div id="container-social-list-home" data-aos="fade-left" class=`${style.container_social_list}`>
             <ul id="social-list-icons" class=`${style.social_list_icons}`>
                 <li><a href="https://www.linkedin.com/in/dantsc/" target="_blank"><img class=`${style.icon}` src={linkedinIcon} alt="icone de rede social linkedin"></a></li>
                 <li><a href="https://github.com/ldantsc" target="_blank"><img class=`${style.icon}` src={githubIcon} alt="icone de rede social github"></a></li>
                 <li><a href="mailto:dants.dev@gmail.com"><img class=`${style.icon}` src={mailIcon} alt="icone de email"></a></li>
                 <li><a href="https://wa.link/wr4vt8" target="_blank"><img class=`${style.icon}` src={whatsappIcon} alt="icone do whatsapp"></a></li>
             </ul>
+        </div>
+        <div class=`${style.container_arrow}`>
+            <img data-aos="fade-up" data-aos-delay="1700" src="arrowdown.svg" class="w-3">
         </div>
     </div>
 </div>

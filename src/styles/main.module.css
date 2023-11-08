@@ -38,3 +38,20 @@ li {
 .icon:hover {
     filter: invert(53%) sepia(100%) saturate(393%) hue-rotate(139deg) brightness(97%) contrast(83%);
 }
+
+.container_arrow {
+    @apply flex justify-center relative;
+}
+
+.container_arrow img {
+    @apply absolute top-10 lg:hidden;
+    animation: arrowFX 600ms ease-in-out infinite alternate-reverse;
+}
+
+@keyframes arrowFX {
+    from {
+        transform: translateY(0);
+    } to {
+        transform: translateY(40%)
+    }
+}

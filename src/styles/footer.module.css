@@ -1,8 +1,16 @@
 .container_footer {
     margin: 6rem 0 10px;
     padding: 6rem 0 10px;
+    @apply text-end pr-2;
 }
 
+.title {
+    @apply text-3xl md:text-5xl xl:md:text-6xl font-extrabold;
+}
+
+.container_footer span {
+    @apply text-orange-400;
+}
 
 .container_footer span:first-child {
     color: var(--color-blue-dark);
@@ -12,7 +20,15 @@
     color: var(--color-blue-soft);
 }
 
-.container_footer img {
+.container_scroll {
+    @apply flex justify-end;
+}
+
+.container_scroll img {
     text-align: center;
-    width: 10px;
+    @apply w-3 mr-1;
+}
+
+.container_scroll p {
+    @apply text-sm; 
 }

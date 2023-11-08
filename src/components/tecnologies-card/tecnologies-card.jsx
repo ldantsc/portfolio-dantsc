@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 function InsertIcons(icons) {
     const imageElements = icons.map((icon, id) => (
-        <img key={id} src={icon} alt="tech icon" />
+            <img key={id} src={icon} alt="tech icon" />
     ));
 
     return imageElements;
@@ -17,11 +17,11 @@ export default function TecnologiesCard(props) {
     }, [props.icons]);
 
     return (
-        <div className={style.card}>
+        <div data-aos="fade-up" className={style.card}>
             <div>
                 <h3>{props.title}</h3>
             </div>
-            <div>
+            <div>   
                 {imageList}
             </div>
         </div>
