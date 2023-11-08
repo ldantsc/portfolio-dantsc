@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 20vw;
+    @apply w-60;
 }
 
 .card > div > h3 {
@@ -27,10 +27,10 @@
 }
 
 .card > div > img {
-    width: 35px;
-    margin: 10px;
+    margin: 5px;
     filter: saturate(0);
-    transition: 0.5s
+    transition: 0.5s;
+    @apply w-7;
 }
 
 .card > div > img:hover {

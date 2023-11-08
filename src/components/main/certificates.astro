@@ -1,16 +1,18 @@
 ---
-import CertificatesImage from '../certificates-images/certificates-images.astro'
+import CertificatesImages from '../certificates-images/certificates-images.astro'
 import CertificatesDescript from '../certificates-descript/certificates-descript.astro'
 import style from '../../styles/certificates.module.css'
 ---
 
-<div id="container-certificates" class="grid grid-cols-1 xl:grid-cols-2 gap-4" >
-    <div id="container-title-certificates flex">
-        <div>
-            <h2 class=`title`>Certificados</h2>
+<div id="container-certificates" class=`${style.container_certificates}` >
+    <div id="container-description-certificates" class=`${style.container_description_certificates}` >
+        <div id="container-text-certificates">
+            <h2 class=`${style.title}`>Certificados</h2>
             <p class=`${style.subtitle}`>“A cada dia um novo passo, um novo desafio, um novo aprendizado”</p>
         </div>
-
+        <div id="container-img-certificates" class=`${style.container_img_certificates}`>
+            <CertificatesImages />
+        </div>
     </div>
     <div id="container-descript-certificates" class="text-end">
         <CertificatesDescript title="Superior em Desenvolvimento Web" name="Anhanguera Educacional - Técnologo" other="cursando desde ago/2023" delayFx="300"/>

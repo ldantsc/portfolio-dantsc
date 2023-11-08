@@ -21,7 +21,7 @@ export default function TecnologiesCard(props) {
             <div>
                 <h3>{props.title}</h3>
             </div>
-            <div className="container-card-icons">
+            <div>
                 {imageList}
             </div>
         </div>

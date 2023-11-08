@@ -1,6 +1,63 @@
+.container_certificates {
+    @apply grid grid-cols-1 xl:grid-cols-2 items-center gap-10;
+}
+
+.container_description_certificates {
+    @apply flex flex-col items-center text-center xl:text-start;
+}
+
+.title {
+    font-weight: 700;
+    @apply text-4xl xl:text-5xl 2xl:text-6xl;
+    @apply mb-10;
+}
+
 .subtitle {
     font-style: italic;
     color: var(--color-blue-dark);
+}
+
+.container_img_certificates {
+    @apply relative w-52 h-52 md:w-64 md:h-64 lg:w-96 lg:h-96 m-14;
+}
+
+.container_img_certificates img {
+    position: absolute;
+}
+
+/*Não posso utilizar o nth:child para 
+mudar posições absolutas com as imgs, 
+utilizar classes separadas*/
+
+.img_first {
+    @apply top-[0] left-[-15%];
+}
+
+.img_second {
+    @apply top-[5%] left-[-5%];
+    
+}
+
+.img_third {
+    @apply top-[10%] left-[0%];
+    
+}
+
+.img_fourth {
+    @apply top-[15%] left-[10%];
+    
+}
+
+.img_fifth {
+    @apply top-[20%] left-[15%];
+    
+}
+
+.img_first:hover,
+.img_second:hover,
+.img_third:hover,
+.img_fourth:hover {
+    z-index: 300;
 }
 
 .title_certificates_descript {
