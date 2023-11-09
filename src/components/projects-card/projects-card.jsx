@@ -7,7 +7,7 @@ export default function ProjectsCard(props) {
     return (
         <div className={style.card} data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
-        data-aos-duration="3000" >
+        data-aos-duration="1000" >
             <div className='mb-1'>
                 <img src={props.image} alt="imagem do projeto" />
             </div>
