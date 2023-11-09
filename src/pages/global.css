@@ -1,5 +1,6 @@
 :root {
     --bg-theme-white: #F5F4F0;
+    --color-text-white: #F5F4F0;
     --bg-color-card: #F3F3F3;
     --color-blue-dark: #1D4E89;
     --color-blue-soft: #1FBACE;
@@ -26,9 +27,12 @@ section {
 }
 
 #certificates,
-#tecnologies,
-#projects {
+#tecnologies {
     @apply container my-20;
+}
+
+#projects {
+    @apply container;
 }
 
 #about {

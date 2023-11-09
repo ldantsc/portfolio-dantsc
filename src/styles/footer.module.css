@@ -1,6 +1,4 @@
 .container_footer {
-    margin: 6rem 0 10px;
-    padding: 6rem 0 10px;
     @apply text-end pr-2;
 }
 
@@ -8,8 +6,13 @@
     @apply text-3xl md:text-5xl xl:md:text-6xl font-extrabold;
 }
 
-.container_footer span {
-    @apply text-orange-400;
+.span_custom {
+    background-image: linear-gradient(45deg, var(--color-blue-dark), var(--color-blue-soft));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
 .container_footer span:first-child {
@@ -26,9 +29,10 @@
 
 .container_scroll img {
     text-align: center;
-    @apply w-3 mr-1;
+    @apply w-3 mr-2;
 }
 
 .container_scroll p {
+    font-weight: 600;
     @apply text-sm; 
 }

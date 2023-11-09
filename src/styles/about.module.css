@@ -9,7 +9,7 @@
 
 .descript {
     font-weight: 400;
-    @apply text-lg lg:text-xl 2xl:text-2xl text-center lg:text-start;
+    @apply text-lg lg:text-xl 2xl:text-2xl text-center lg:text-start mb-10;
 }
 
 .bold_blue_h {
@@ -25,25 +25,24 @@
 }
 
 .container_btn_about {
-    @apply my-10 text-center lg:text-end;
+    @apply text-center lg:text-end mx-20 lg:mx-10;
 }
 
 .btn {
-    padding: 8px 14px;
-    color: whitesmoke;
-    background-color: var(--color-blue-dark);
+    color: var(--color-text-white);
+    background-color: var(--color-blue-dark)!important;
     border-radius: 6px;
-    font-weight: 700;
-    transition: 0.5s;
+    font-weight: 600;
+    transition: 400ms;
+    @apply py-2 px-4 text-end;
 }
 
 .btn:hover {
-    cursor: pointer;
-    background-color: var(--color-blue-soft);
+    background-color: var(--color-blue-soft)!important;
 }
 
 .container_image_about {
-    @apply w-72 h-72 lg:w-96 lg:h-96 relative;
+    @apply w-72 h-72 lg:w-96 lg:h-96 relative my-10;
     animation: filterFx 5s;
 }
 
@@ -58,7 +57,7 @@
 }
 
 .image_about {
-    @apply w-60 h-auto left-[24px] top-[20px] absolute shadow-lg;
+    @apply w-60 h-auto left-[24px] top-[20px] absolute shadow-md;
     @apply lg:w-80 lg:h-auto lg:left-[40px] lg:top-[10px];
 }
 

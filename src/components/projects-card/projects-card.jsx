@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import style from '../../styles/projects.module.css'
 
 
