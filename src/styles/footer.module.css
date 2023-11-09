@@ -1,9 +1,9 @@
 .container_footer {
-    @apply text-end pr-2;
+    @apply text-end py-10;
 }
 
 .title {
-    @apply text-3xl md:text-5xl xl:md:text-6xl font-extrabold;
+    @apply text-3xl md:text-5xl xl:md:text-6xl 2xl:md:text-7xl font-extrabold;
 }
 
 .span_custom {
@@ -33,6 +33,5 @@
 }
 
 .container_scroll p {
-    font-weight: 600;
     @apply text-sm; 
 }

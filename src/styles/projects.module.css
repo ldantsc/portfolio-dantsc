@@ -1,27 +1,62 @@
+.container_projects_title {
+    @apply my-20 text-center;
+}
+
+.subtitle {
+    @apply pt-10 text-xl lg:text-2xl xl:text-3xl mb-6;
+}
+
+.subtitle span {
+    color: var(--color-blue-soft);
+    font-weight: 600;
+}
+
+.attention {
+    @apply italic pt-3 text-violet-700 font-bold;
+}
+
+.container_projects_card {
+    @apply flex flex-wrap gap-5 justify-center;
+}
+
 .card {
-    width: 268px;
-    height: 368px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     background-color: var(--bg-color-card);
-    border-radius: 30px;
-    box-shadow: 0 0 5px 0 rgb(0, 0, 0, 0.25);
+    border-radius: 18px;
+    box-shadow: 0 0 3px 0 rgb(0, 0, 0, 0.25);
+    @apply w-[228px] lg:w-[264px] xl:w-[280px];
 }
 
-.card div h3 {
-    font-weight: 700;
+.container_card_image {
+    @apply mb-1;
+}
+
+.container_card_image img {
+    width: 280px;
+    height: 220px;
+    @apply px-7 py-10;
+}
+
+.container_card_descript {
+    @apply px-3 grow;
+}
+
+.container_card_descript h3 {
+    font-weight: 800;
     color: var(--color-blue-dark);
 }
 
-.card img {
-    width: 158px;
-    height: 118px;
-    padding: 0;
-    margin: 30px 0 0;
-    background-position: contain contain;
-    box-shadow: 0 0 1px 0 rgb(0, 0, 0, 0.25);
+.container_card_descript p {
+    color: black;
+    @apply text-sm italic p-2 font-light;
+}
+
+
+.container_btn {
+    @apply my-7;
 }
 
 .btn_url {
@@ -37,4 +72,12 @@
 .btn_url:hover {
     color: var(--bg-color-card);
     background-color: var(--color-blue-dark);
+}
+
+.container_text_foot {
+    @apply py-16;
+}
+
+.container_text_foot p {
+    @apply italic text-end font-light text-gray-950;
 }

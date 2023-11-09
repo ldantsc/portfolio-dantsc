@@ -2,12 +2,13 @@
 
 import '@fontsource/poppins/700.css'
 import AboutImage from '../about-image/about-image.astro'
-import ButtonMore from '../btn-more/btn-more.astro'
+import Button from '../button/button.astro'
 import style from '../../styles/about.module.css'
+import Popup from '../popup/popup.astro'
 
 ---
 
-<div id="container-about" class=`${style.container_about}`>
+<div id="container-about" class=`${style.container_about}`>   
     <div id="container-descript-about" class=`${style.container_descript_about}`>
         <h2 data-aos="fade-right" class="title">Sobre mim</h2>
         <p data-aos="fade-right" class=`${style.descript}`>
@@ -18,10 +19,11 @@ import style from '../../styles/about.module.css'
             <span class=`${style.bold_blue_s}`>principais tecnologias do mercado</span>
         </p>
         <div id="container-btn-about" class=`${style.container_btn_about}`>
-            <ButtonMore />
+            <Button />
         </div>
     </div>
     <div id="container-img-about" class=`${style.container_image_about}`>
         <AboutImage />
     </div>
+    <Popup />
 </div>

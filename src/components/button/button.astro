@@ -1,0 +1,15 @@
+---
+
+import style from '../../styles/about.module.css';
+import Popover from '../popup/popup.astro'
+
+---
+
+<button data-aos="zoom-in" class=`${style.btn}` type="button" data-btn-info>Saiba mais</button>
+<script>
+    const openButton = document.querySelector("[data-btn-info]")
+    const modal = document.getElementById("modal-about")
+    openButton.addEventListener('click', () => {
+        modal.showModal()
+    })
+</script>

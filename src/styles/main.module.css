@@ -44,7 +44,7 @@ li {
 }
 
 .container_arrow img {
-    @apply absolute top-10 lg:hidden;
+    @apply absolute top-10;
     animation: arrowFX 600ms ease-in-out infinite alternate-reverse;
 }
 
