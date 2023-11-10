@@ -42,8 +42,8 @@
 }
 
 .container_image_about {
-    @apply w-72 h-72 lg:w-96 lg:h-96 relative my-10;
-    animation: filterFx 5s;
+    @apply w-72 h-72 lg:w-96 lg:h-96 relative my-10 scale-[0.80];
+    animation: filterFx 500ms;
 }
 
 .image_about_border_orange {
