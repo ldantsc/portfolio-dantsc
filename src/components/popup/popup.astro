@@ -1,10 +1,10 @@
 ---
 import style from '../../styles/popup.module.css'
-const text = "Olá ! Sou o Lucas, nascido em 1996, atualmente sou Desenvolvedor Web Front-End. Durante o ano de 2022 até o momento, venho me dedicando e desenvolvendo habilidades técnicas focado na área de Desenvolvimento Web para construção de componentes, estilização, funcionalidades e manutenção de websites. Tenho muita vontade de continuamente desenvolver meus estudos, tanto as minhas hardskills mas também minhas softskills para colaborar da melhor forma possível com equipes de desenvolvedores e entregar resultados significativos para clientes e empresas."
+import AboutMeText from '../about-me-text/about-me-text.astro'
 ---
 
 <dialog id="modal-about" class=`${style.container_about_popup}`>
-    <p>{text}</p>
+    <AboutMeText />
     <div id="container-modal-button" class=`${style.container_modal_button}`>
         <button data-close-btn>Fechar</button>
     </div>
@@ -12,7 +12,5 @@ const text = "Olá ! Sou o Lucas, nascido em 1996, atualmente sou Desenvolvedor 
 <script>
     const closeButton = document.querySelector("[data-close-btn]")
     const modal = document.getElementById("modal-about")
-    closeButton.addEventListener("click", () => {
-        modal.close();
-    })
+    closeButton.addEventListener("click", () => modal.close())
 </script>

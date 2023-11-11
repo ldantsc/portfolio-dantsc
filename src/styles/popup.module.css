@@ -7,11 +7,18 @@
     text-align: center;
     align-items: center;
     border-radius: 18px;
-    background-color: var(bg-color-card);
-    @apply py-5 w-11/12 md:w-10/12 2xl:w-6/12;
+    background-color: var(--bg-color-card);
+    @apply py-5 w-11/12 md:w-10/12 2xl:w-8/12;
 }
 
-.container_about_popup p {
+
+.title_popup {
+    color: var(--color-blue-dark);
+    @apply my-5 text-4xl font-extrabold;
+}
+
+.text_popup {
+    color: var(--color-font-dark);
     @apply text-sm sm:text-lg lg:text-xl 2xl:text-2xl px-6 lg:px-28;
 }
 
