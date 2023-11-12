@@ -30,7 +30,7 @@ const iconsTech = [{
         </div>
         <div id="container-tecnologies-card" class=`${style.container_tecnologies_card}`>
             {iconsTech.map((tech) => {
-                return <TecnologiesCard key={tech.id} title={tech.title} icons={tech.icon} client:only/>
+                return <TecnologiesCard key={tech.id} title={tech.title} icons={tech.icon} client:visible/>
             })}
         </div>
 </div>

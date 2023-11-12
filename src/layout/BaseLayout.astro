@@ -23,7 +23,7 @@ import { Analytics } from "@vercel/analytics/react";
         <main class="base_layout">
             <slot />
         </main>
-        <Analytics />
+        <Analytics client:visible/>
     </body>
     <script>
         import { aosInit } from "../services/aos";

@@ -30,7 +30,7 @@ const newArr = userData.filter((data) => {
         {newArr.map((data) => {
             const img = `https://raw.githubusercontent.com/ldantsc/${data.name}/${data.default_branch}/demo.png` 
             return (
-                <ProjectsCard title={data.name} description={data.description} url={data.html_url} image={img} client:only/>
+                <ProjectsCard title={data.name} description={data.description} url={data.html_url} image={img} client:visible/>
             )
         })}
     </div>
