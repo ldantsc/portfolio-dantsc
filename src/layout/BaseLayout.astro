@@ -6,7 +6,6 @@ import '@fontsource/poppins/200.css'
 import '@fontsource/poppins/400.css'
 import '@fontsource/poppins/700.css'
 import '@fontsource/poppins/900.css'
-import { Analytics } from "@vercel/analytics/react";
 
 ---
 
@@ -23,7 +22,6 @@ import { Analytics } from "@vercel/analytics/react";
         <main class="base_layout">
             <slot />
         </main>
-        <Analytics client:visible/>
     </body>
     <script>
         import { aosInit } from "../services/aos";
