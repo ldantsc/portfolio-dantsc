@@ -41,7 +41,8 @@ section {
 
 #container-home {
     height: 100vh;
-    @apply container;
+    height: 100dvh;
+    @apply container overflow-hidden;
 }
 
 .title {
