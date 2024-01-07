@@ -1,30 +1,43 @@
 ---
-
-import '@fontsource/poppins/700.css'
-import AboutImage from '../about-image/about-image.astro'
-import Button from '../button/button.astro'
-import style from '../../styles/about.module.css'
-import Popup from '../popup/popup.astro'
-
+import "@fontsource/poppins/700.css";
+import AboutImage from "../about-image/about-image.astro";
+import Button from "../button/button.astro";
+import style from "../../styles/about.module.css";
+import Popup from "../popup/popup.astro";
+const linkCurriculo =
+  "https://drive.google.com/file/d/1bMfsAsQcMcIhGEhLJmK9vmF2m_kfamdK/view?usp=sharing";
 ---
 
-<div id="container-about" class=`${style.container_about}`>   
-    <div id="container-descript-about" class=`${style.container_descript_about}`>
-        <h2 data-aos="fade-right" class="title">Sobre mim</h2>
-        <p data-aos="fade-right" class=`${style.descript}`>
-            Olá! Meu nome é Lucas Dantas, sou <span class=`${style.bold_blue_s}`>aspirante de TI</span> e <span class=`${style.bold_blue_h}`>desenvolvedor
-            web</span> front-end desde 2022. Venho me dedicando
-            no <span class=`${style.bold_blue_h}`>mundo da programação</span> focado em desenvolvimento de aplicações web com as
-            <span class=`${style.bold_blue_s}`>principais tecnologias do mercado.</span> Embora me considero um desenvolvedor front-end,
-            venho procurando <span class=`${style.bold_blue_h}`>novos desafios</span> e sigo em buscar um conhecimento mais aprofundado para futuramente atuar como <span class=`${style.bold_blue_s}`>fullstack</span>
-        </p>
-        <div id="container-btn-about" class=`${style.container_btn_about}`>
-            <a data-aos="fade-up" data-aos-duration="2000" class=`${style.btn_cv}` href="https://drive.google.com/file/d/1zWvaGy0me71MjIbyOnZI7MBJtW5bez1b/view?usp=sharing" target="_blank">Ver CV</a>
-            <Button />
-        </div>
+<div id="container-about" class=`${style.container_about}`>
+  <div id="container-descript-about" class=`${style.container_descript_about}`>
+    <h2 data-aos="fade-right" class="title">Sobre mim</h2>
+    <p data-aos="fade-right" class=`${style.descript}`>
+      Olá! Meu nome é Lucas Dantas, sou <span class=`${style.bold_blue_s}`
+        >aspirante de TI</span
+      > e <span class=`${style.bold_blue_h}`>desenvolvedor web</span> front-end desde
+      2022. Venho me dedicando no <span class=`${style.bold_blue_h}`
+        >mundo da programação</span
+      > focado em desenvolvimento de aplicações web com as
+      <span class=`${style.bold_blue_s}`
+        >principais tecnologias do mercado.</span
+      > Embora me considero um desenvolvedor front-end, venho procurando <span
+        class=`${style.bold_blue_h}`>novos desafios</span
+      > e sigo em buscar um conhecimento mais aprofundado para futuramente atuar
+      como <span class=`${style.bold_blue_s}`>fullstack</span>
+    </p>
+    <div id="container-btn-about" class=`${style.container_btn_about}`>
+      <a
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        class=`${style.btn_cv}`
+        href=`${linkCurriculo}`
+        target="_blank">Ver CV</a
+      >
+      <Button />
     </div>
-    <div id="container-img-about" class=`${style.container_image_about}`>
-        <AboutImage />
-    </div>
-    <Popup />
+  </div>
+  <div id="container-img-about" class=`${style.container_image_about}`>
+    <AboutImage />
+  </div>
+  <Popup />
 </div>

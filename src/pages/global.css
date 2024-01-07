@@ -1,52 +1,52 @@
 :root {
-    --bg-theme-white: #F5F4F0;
-    --color-text-white: #F5F4F0;
-    --bg-color-card: #F3F3F3;
-    --color-blue-dark: #1D4E89;
-    --color-blue-soft: #1FBACE;
-    --color-orange-soft: #FBD1A2;
-    --color-orange-dark: #F79256;
-    --color-font-dark: #585858;
+  --bg-theme-white: #f5f4f0;
+  --color-text-white: #f5f4f0;
+  --bg-color-card: #f3f3f3;
+  --color-blue-dark: #1d4e89;
+  --color-blue-soft: #1fbace;
+  --color-orange-soft: #fbd1a2;
+  --color-orange-dark: #f79256;
+  --color-font-dark: #585858;
 }
 
 html,
 body {
-    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
-    scroll-behavior: smooth;
+  font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--bg-theme-white);
-    color: var(--color-font-dark);
-    display: flex;
-    justify-content: center;
+  background-color: var(--bg-theme-white);
+  color: var(--color-font-dark);
+  display: flex;
+  justify-content: center;
 }
 
 section {
-    max-width: 100vw;
+  max-width: 100vw;
 }
 
 #certificates,
 #tecnologies {
-    @apply container my-20;
+  @apply container my-20;
 }
 
 #projects {
-    @apply container;
+  @apply container;
 }
 
 #about {
-    @apply container pb-8 lg:pb-10 xl:pb-20 mb-20;
+  @apply container pb-8 lg:pb-10 xl:pb-20 mb-20;
 }
 
 #container-home {
-    height: 100vh;
-    height: 100dvh;
-    @apply container overflow-hidden;
+  height: 100vh;
+  height: 100dvh;
+  @apply container overflow-hidden;
 }
 
 .title {
-    font-weight: 700;
-    @apply text-4xl xl:text-5xl 2xl:text-6xl text-center lg:text-start;
-    @apply my-10;
+  font-weight: 700;
+  @apply text-4xl xl:text-5xl 2xl:text-6xl text-center lg:text-start;
+  @apply my-10;
 }

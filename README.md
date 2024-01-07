@@ -1,4 +1,5 @@
 # Portfólio dants.dev </>
+
 <br>
 
 <h4 align="center">Lucas aqui, e com muito entusiasmo que apresento a vocês o meu portfólio pessoal !</h4>
@@ -19,24 +20,23 @@ O objetivo deste projeto é apresentar um pouco sobre minha história e minha jo
 
 Para iniciar o projeto, estabeleci um objeto de criar meu site e que este site não seja feito a partir de um template ja existente, por mais que eu não tenha um conheça sobre design, fui desenhando no Figma até chegar em algo que me agradava e que fosse minimamente coerente com a proposta.
 
-
 <br>
 <div align="center">
 
 [Prototipo do projeto no Figma](https://www.figma.com/file/fQl2ZqZr1aTmQb9ClkvNfo/PORTFOLIO-dants.dev?type=design&node-id=0%3A1&mode=design&t=xofppZJZ03DU32zB-1)
 
-*como pode ver, ficou uma bagunça, e um pouco diferente da versão final* :sweat_smile:
+_como pode ver, ficou uma bagunça, e um pouco diferente da versão final_ :sweat_smile:
 
 </div>
 <br>
 
 <h4>Seções que compõe a pagina<h4>
 
-* Apresentação
-* Sobre mim
-* Certificados
-* Tecnologias
-* Projetos
+- Apresentação
+- Sobre mim
+- Certificados
+- Tecnologias
+- Projetos
 
 <br>
 
@@ -50,10 +50,10 @@ Por ser um projeto que eu gostaria algo mais "minimalista", simples e funcional,
 
 <h4> Frameworks e biblioteca s</h4>
 
-* AstroJS + React
-* AOS
-* Typescript
-* Tailwind CSS
+- AstroJS + React
+- AOS
+- Typescript
+- Tailwind CSS
 
 <h4>API</h4>
 
@@ -83,8 +83,6 @@ Deixo aqui meus sinceros agradecimentos aos meus amigos que sempre me apoiando d
 
 > caso encontre algum bug, problemas com resposividade ou se simplesmente você queira trocar experiências, mandar sugestões, pode me chamar no chat do LinkedIn !
 
-<br> 
+<br>
 
 🚀🚀🚀
-
-

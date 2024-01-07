@@ -1,40 +1,55 @@
 ---
-
-import ProjectsCard from '../projects-card/projects-card.jsx'
-import style from '../../styles/projects.module.css'
+import ProjectsCard from "../projects-card/projects-card.jsx";
+import style from "../../styles/projects.module.css";
 
 /* API PUBLICA DO GITHUB */
-const user = await fetch("https://api.github.com/users/ldantsc/repos", { headers: { authorization: import.meta.env.API_TOKEN}})
-const userData = await user.json()
+const user = await fetch("https://api.github.com/users/ldantsc/repos", {
+  headers: { authorization: import.meta.env.API_TOKEN },
+});
+const userData = await user.json();
 /* Filtrando o json para trazer apenas os repositórios que não tenha a tag study-notes */
 /* Após devolver o array filtrado para newArr, utilizar o map para percorrer o json */
 
 const newArr = userData.filter((data) => {
-    if(!data.topics.includes("study-notes")){
-        return data
-    }
-})
-
+  if (!data.topics.includes("study-notes")) {
+    return data;
+  }
+});
 ---
 
 <div id="container-projects" class="">
-    <div id="container-projects-title" class=`${style.container_projects_title}`>
-        <h2 data-aos="fade-up" class="title">Meu projetos</h2>
-        <p data-aos="fade-up" class=`${style.subtitle}`>Esta sessão contém alguns dos meus projetos <span>pessoais</span> ou <span>profissionais</span>
-            realizados durante o meu <span>aprendizado/carreira</span> como desenvolvedor. Utilize o botão "saiba mais" para conferir
-            no <span>meu repositório do Github</span> (deploy no repositório)
-        </p>
-        <p data-aos="fade-up" class=`${style.attention}`>Observação: pode conter projetos em andamento</p>
-    </div>
-    <div id="container-projects-card" class=`${style.container_projects_card}`>       
-        {newArr.map((data) => {
-            const img = `https://raw.githubusercontent.com/ldantsc/${data.name}/${data.default_branch}/demo.png` 
-            return (
-                <ProjectsCard title={data.name} description={data.description} url={data.html_url} image={img} client:visible/>
-            )
-        })}
-    </div>
-    <div data-aos="fade-up" class=`${style.container_text_foot}`>
-        <p>Aguarde para mais projetos no futuro...</p>
-    </div>
+  <div id="container-projects-title" class=`${style.container_projects_title}`>
+    <h2 data-aos="fade-up" class="title">Meu projetos</h2>
+    <p data-aos="fade-up" class=`${style.subtitle}`>
+      Esta sessão contém alguns dos meus projetos <span>pessoais</span> ou <span
+        >profissionais</span
+      >
+      realizados durante o meu <span>aprendizado/carreira</span> como desenvolvedor.
+      Utilize o botão "saiba mais" para conferir no <span
+        >meu repositório do Github</span
+      > (deploy no repositório)
+    </p>
+    <p data-aos="fade-up" class=`${style.attention}`>
+      Observação: pode conter projetos em andamento
+    </p>
+  </div>
+  <div id="container-projects-card" class=`${style.container_projects_card}`>
+    {
+      newArr.map((data) => {
+        const img = `https://raw.githubusercontent.com/ldantsc/${data.name}/${data.default_branch}/demo.png`;
+        return (
+          <ProjectsCard
+            title={data.name}
+            description={data.description}
+            url={data.html_url}
+            image={img}
+            client:visible
+          />
+        );
+      })
+    }
+  </div>
+  <div data-aos="fade-up" class=`${style.container_text_foot}`>
+    <p>Aguarde para mais projetos no futuro...</p>
+  </div>
 </div>
