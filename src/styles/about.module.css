@@ -34,7 +34,7 @@
   border-radius: 6px;
   font-weight: 600;
   transition: 400ms;
-  @apply py-2 px-4 text-end;
+  @apply mt-5 lg:mt-0 py-2 px-4 text-end;
 }
 
 .btn_cv {
@@ -42,7 +42,7 @@
   border-radius: 6px;
   font-weight: 600;
   transition: 400ms;
-  @apply mx-4 text-end;
+  @apply m-4 lg:mx-4 text-end;
 }
 
 .btn:hover {
